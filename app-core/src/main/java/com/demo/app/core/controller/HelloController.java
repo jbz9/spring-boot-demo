@@ -11,7 +11,11 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String helloWorld() {
-        return "hello";
+        log.info("======info======");
+        log.debug("======debug======");
+        log.warn("======warn======");
+        log.error("======error=====");
+        return "hello world";
     }
 
 }
